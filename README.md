@@ -1,3 +1,5 @@
+![delta-cms-typescript-package-templateアートボード 1@0 5x](https://user-images.githubusercontent.com/24543982/57816721-575ddb00-77b7-11e9-867a-4311eef0bd68.png)
+
 # delta-cms/typescript-package-template
 delta-cms関係のTypeScriptモジュール及びパッケージを開発するときに使う雛形です。
 
