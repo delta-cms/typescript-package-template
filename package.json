@@ -1,0 +1,42 @@
+{
+  "name": "typescript-package-template",
+  "version": "0.0.0",
+  "description": "Typescript package and library template.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "lint": "tslint -c tslint.json './src/**/*.ts'",
+    "build": "tsc -p .",
+    "watch": "tsc -p . --watch",
+    "test": "jest"
+  },
+  "author": "hota1024",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.12",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@/(.+)": "<rootDir>/$1"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/tests/*.+(ts|js)"
+    ]
+  }
+}
